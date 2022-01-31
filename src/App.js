@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Item from "./Components/Item/Item";
 
 function App() {
+
+  /*le state c'est tous les données d'un composant
+  et si le state change, le composant se met à jour*/
+
+
+  // console.log(useState(10));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello depuis App</h1>
+      <Item />
     </div>
   );
 }
